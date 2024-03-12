@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1 class="title">Aeronautics Home</h1>
+    <p style="padding: 10px 10px 10px 20px;">
+        Welcome to Aeronautics, a website developed by
+        <em>Henry</em>!
+    </p>
+    <div class="images">
+        {% load static %}
+        <img
+            src="{% static '/images/airplane1.jpg' %}"
+            alt="JPG diagram"
+            style="width:555px;height: 540px;" />
+        <img
+            src="{% static '/images/airplane2.jpg' %}"
+            alt="JPG diagram"
+            style="width:555px;height: 540px;" />
+    </div>
+{% endblock %}
